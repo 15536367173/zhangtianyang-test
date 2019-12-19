@@ -1,144 +1,54 @@
-2019-12-17 11:00:53.098  INFO 15068 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78a773fd: startup date [Tue Dec 17 11:00:53 CST 2019]; root of context hierarchy
-2019-12-17 11:00:53.394  INFO 15068 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-12-17 11:00:53.435  INFO 15068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba04a92f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 11:00:53.679  INFO 15068 --- [main] com.gosun.es.test.TestEs                 : The following profiles are active: local
-2019-12-17 11:00:53.682  INFO 15068 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1eb6749b: startup date [Tue Dec 17 11:00:53 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78a773fd
-2019-12-17 11:00:54.535  INFO 15068 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b8bf9d5-707f-3c47-86a0-6e3abe0e4350
-2019-12-17 11:00:54.602  INFO 15068 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-12-17 11:00:54.641  INFO 15068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$64566460] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 11:00:54.723  INFO 15068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba04a92f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 11:00:54.776  WARN 15068 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageListener': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.gosun.server.elasticsearch.service.SearchService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-2019-12-17 11:18:16.276  INFO 1368 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78a773fd: startup date [Tue Dec 17 11:18:16 CST 2019]; root of context hierarchy
-2019-12-17 11:18:16.500  INFO 1368 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-12-17 11:18:16.526  INFO 1368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2210954f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 11:18:16.753  INFO 1368 --- [main] com.gosun.es.test.TestEs                 : The following profiles are active: local
-2019-12-17 11:18:16.758  INFO 1368 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e1d3956: startup date [Tue Dec 17 11:18:16 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78a773fd
-2019-12-17 11:18:17.760  INFO 1368 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=64d5fa91-db18-368d-85a4-942e63c839bf
-2019-12-17 11:18:17.841  INFO 1368 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-12-17 11:18:17.899  INFO 1368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cc625080] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 11:18:17.974  INFO 1368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2210954f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 11:18:19.206  INFO 1368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
-2019-12-17 11:18:19.207  INFO 1368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
-2019-12-17 11:18:19.208  INFO 1368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
-2019-12-17 11:18:19.214  INFO 1368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-12-17 11:18:19.215  INFO 1368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-12-17 11:18:19.434  INFO 1368 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-12-17 11:18:19.761  WARN 1368 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-17 11:18:19.761  INFO 1368 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-17 11:18:19.769  WARN 1368 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-17 11:18:19.769  INFO 1368 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-17 11:18:19.872  INFO 1368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-12-17 11:18:20.049  INFO 1368 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1e1d3956: startup date [Tue Dec 17 11:18:16 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78a773fd
-2019-12-17 11:18:20.115  INFO 1368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-12-17 11:18:20.118  INFO 1368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-12-17 11:18:21.001  INFO 1368 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2019-12-17 11:18:21.002  INFO 1368 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
-2019-12-17 11:18:21.002  INFO 1368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-17 11:18:21.025  INFO 1368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-17 11:18:21.068  INFO 1368 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-17 11:18:21.087  INFO 1368 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [39.107.46.140:5672]
-2019-12-17 11:18:21.265 ERROR 1368 --- [AMQP Connection 39.107.46.140:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
-
-java.net.SocketException: Socket Closed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:171)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
-	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
-	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
-	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:580)
-	at java.lang.Thread.run(Thread.java:748)
-
-2019-12-17 11:18:21.270 ERROR 1368 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
-
-org.springframework.amqp.AmqpAuthenticationException: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:65)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:476)
-	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:614)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:240)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1797)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1771)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1752)
-	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:345)
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1604)
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:995)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:351)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:957)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:847)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:449)
-	... 9 common frames omitted
-
-2019-12-17 11:18:21.288  INFO 1368 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [39.107.46.140:5672]
-2019-12-17 11:18:21.311 ERROR 1368 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer received fatal exception on startup
-
-org.springframework.amqp.rabbit.listener.exception.FatalListenerStartupException: Authentication failure
-	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:574)
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:996)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.springframework.amqp.AmqpAuthenticationException: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:65)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:476)
-	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:614)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:240)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils$1.createConnection(ConnectionFactoryUtils.java:106)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.doGetTransactionalResourceHolder(ConnectionFactoryUtils.java:157)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.getTransactionalResourceHolder(ConnectionFactoryUtils.java:92)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.getTransactionalResourceHolder(ConnectionFactoryUtils.java:75)
-	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:568)
-	... 2 common frames omitted
-Caused by: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:351)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:957)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:847)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:449)
-	... 9 common frames omitted
-
-2019-12-17 11:18:21.311 ERROR 1368 --- [AMQP Connection 39.107.46.140:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
-
-java.net.SocketException: socket closed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:171)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
-	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
-	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
-	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:580)
-	at java.lang.Thread.run(Thread.java:748)
-
-2019-12-17 11:18:21.315  WARN 1368 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.amqp.rabbit.config.internalRabbitListenerEndpointRegistry'; nested exception is org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
-2019-12-17 11:18:21.316 ERROR 1368 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Stopping container from aborted consumer
-2019-12-17 11:18:21.316  INFO 1368 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
-2019-12-17 11:18:21.316  INFO 1368 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
-2019-12-17 11:18:21.329  INFO 1368 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-12-17 11:18:21.365  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-12-17 11:18:21.424  INFO 1368 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-12-17 11:18:21.425  INFO 1368 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2019-12-17 11:18:21.646  INFO 1368 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-12-17 11:18:21.647  INFO 1368 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-12-17 11:18:21.919  INFO 1368 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-17 11:18:21.974  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-17 11:18:21.974  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-17 11:18:21.974  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-17 11:18:21.975  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-17 11:18:21.975  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-17 11:18:21.975  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-12-17 11:18:21.975  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-17 11:18:22.212  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-17 11:18:22.214  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-12-17 11:18:22.217  INFO 1368 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-12-17 11:18:22.224  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576552702223 with initial instances count: 0
-2019-12-17 11:18:22.230  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2019-12-17 11:18:25.232  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2019-12-17 11:18:25.252  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SEARCH-SERVICE/GOSUN-Java:search-service:-1 - deregister  status: 404
-2019-12-17 11:18:25.262  INFO 1368 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2019-12-17 11:18:25.264  INFO 1368 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2019-12-19 16:50:52.818  INFO 936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f390750b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 16:50:53.210  INFO 936 --- [main] com.gosun.es.test.TestEs                 : The following profiles are active: local
+2019-12-19 16:50:54.324  INFO 936 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4052a9c-b3c7-3080-b815-f0b1e4313b52
+2019-12-19 16:50:54.485  INFO 936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f390750b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 16:50:56.146  WARN 936 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-19 16:50:56.146  INFO 936 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-19 16:50:56.164  WARN 936 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-19 16:50:56.164  INFO 936 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-19 16:50:56.600  INFO 936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 16:50:57.917  INFO 936 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [106.13.36.82:5672]
+2019-12-19 16:50:58.000  INFO 936 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#2596d7f4:0/SimpleConnection@76bf1bb8 [delegate=amqp://gosun@106.13.36.82:5672//gosun, localPort= 64133]
+2019-12-19 16:50:58.106  INFO 936 --- [main] com.gosun.es.test.TestEs                 : Started TestEs in 6.811 seconds (JVM running for 8.284)
+2019-12-19 16:50:58.910  INFO 936 --- [Thread-5] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-19 16:50:58.914  INFO 936 --- [Thread-5] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SEARCH-SERVICE with eureka with status DOWN
+2019-12-19 16:50:58.948  INFO 936 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2019-12-19 16:50:59.100  INFO 936 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2019-12-19 16:50:59.106  INFO 936 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2019-12-19 16:50:59.119  INFO 936 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-19 16:51:21.670  INFO 8640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b5fa25c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 16:51:21.891  INFO 8640 --- [main] com.gosun.es.test.TestEs                 : The following profiles are active: local
+2019-12-19 16:51:22.740  INFO 8640 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4052a9c-b3c7-3080-b815-f0b1e4313b52
+2019-12-19 16:51:22.877  INFO 8640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b5fa25c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 16:51:23.652  WARN 8640 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-19 16:51:23.652  INFO 8640 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-19 16:51:23.658  WARN 8640 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-19 16:51:23.659  INFO 8640 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-19 16:51:24.126  INFO 8640 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 16:51:25.164  INFO 8640 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [106.13.36.82:5672]
+2019-12-19 16:51:25.267  INFO 8640 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5ceecfee:0/SimpleConnection@3850e90c [delegate=amqp://gosun@106.13.36.82:5672//gosun, localPort= 64178]
+2019-12-19 16:51:25.367  INFO 8640 --- [main] com.gosun.es.test.TestEs                 : Started TestEs in 4.992 seconds (JVM running for 5.828)
+2019-12-19 16:51:25.718  INFO 8640 --- [Thread-5] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-19 16:51:25.721  INFO 8640 --- [Thread-5] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SEARCH-SERVICE with eureka with status DOWN
+2019-12-19 16:51:25.733  INFO 8640 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2019-12-19 16:51:26.368  INFO 8640 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2019-12-19 16:51:26.375  INFO 8640 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2019-12-19 16:51:26.384  INFO 8640 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-19 16:52:31.119  INFO 12548 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$93a2b1b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 16:52:31.315  INFO 12548 --- [main] com.gosun.es.test.TestEs                 : The following profiles are active: local
+2019-12-19 16:52:31.986  INFO 12548 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4052a9c-b3c7-3080-b815-f0b1e4313b52
+2019-12-19 16:52:32.154  INFO 12548 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$93a2b1b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 16:52:32.915  WARN 12548 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-19 16:52:32.916  INFO 12548 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-19 16:52:32.923  WARN 12548 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-19 16:52:32.924  INFO 12548 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-19 16:52:33.343  INFO 12548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 16:52:34.435  INFO 12548 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [106.13.36.82:5672]
+2019-12-19 16:52:34.516  INFO 12548 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6342ff7f:0/SimpleConnection@23ed382c [delegate=amqp://gosun@106.13.36.82:5672//gosun, localPort= 64251]
+2019-12-19 16:52:34.618  INFO 12548 --- [main] com.gosun.es.test.TestEs                 : Started TestEs in 5.084 seconds (JVM running for 5.961)
+2019-12-19 16:52:35.031  INFO 12548 --- [Thread-5] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-19 16:52:35.034  INFO 12548 --- [Thread-5] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SEARCH-SERVICE with eureka with status DOWN
+2019-12-19 16:52:35.044  INFO 12548 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2019-12-19 16:52:35.609  INFO 12548 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2019-12-19 16:52:35.614  INFO 12548 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2019-12-19 16:52:35.624  INFO 12548 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

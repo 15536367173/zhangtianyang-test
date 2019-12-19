@@ -13,6 +13,7 @@
         <module>gateway-server</module>
         <module>cache-server</module>
         <module>config-server</module>
+        <module>rabbitmq</module>
     </modules>
 
     <packaging>pom</packaging>

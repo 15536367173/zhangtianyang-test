@@ -1,0 +1,5 @@
+# Project exclude paths
+/cache-server/target/
+/elasticsearch-server/target/
+/eureka-server/target/
+/gateway-server/target/

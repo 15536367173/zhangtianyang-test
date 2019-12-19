@@ -53,21 +53,21 @@
 
 
     <springProfile name="dev">
-        <logger name="com.qianfeng.openapi.cache" level="INFO">
+        <logger name="com.gosun.server.cache" level="INFO">
             <appender-ref ref="FILE-ERROR"/>
             <appender-ref ref="FILE-INFO"/>
         </logger>
     </springProfile>
 
     <springProfile name="local">
-        <logger name="com.qianfeng.openapi.cache" level="debug">
+        <logger name="com.gosun.server.cache" level="debug">
             <appender-ref ref="FILE-ERROR"/>
             <appender-ref ref="FILE-INFO"/>
         </logger>
     </springProfile>
 
     <springProfile name="prod">
-        <logger name="com.qianfeng.openapi.cache" level="INFO">
+        <logger name="com.gosun.server.cache" level="INFO">
             <appender-ref ref="FILE-ERROR"/>
             <appender-ref ref="FILE-INFO"/>
         </logger>

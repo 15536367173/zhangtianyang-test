@@ -33,13 +33,14 @@ public class TestEs {
     public  void test() throws IOException {
 
 
-        System.out.println(searchService.existsIndex());
+        searchService.createIndex();
+      //  System.out.println(searchService.existsIndex());
 
 ////
 //        System.out.println(searchService.existsIndex());
 //
         // searchService.delIndex();
-      //  searchService.createIndex();
+     // searchService.createIndex();
 
 //
 //        System.out.println(searchService.existsIndex());
